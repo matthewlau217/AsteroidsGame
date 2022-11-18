@@ -2,7 +2,7 @@ Spaceship uwu = new Spaceship();
 Star[] owo = new Star[1000];
 public void setup() 
 {
-  size(500,500);
+  size(1920,1080);
   background(0);
   for (int i = 0; i < owo.length; i++) {
     owo[i] = new Star();
@@ -46,14 +46,15 @@ class Spaceship extends Floater
       xCorners = new int[]{-8, 16, -8, -2};
       yCorners = new int[]{-8, 0, 8, 0};
       myColor = color((int)(Math.random() * 255), (int)(Math.random() * 255), (int)(Math.random() * 255));
-      myCenterX = myCenterY = 250;
+      myCenterX = 1920/2;
+      myCenterY = 1080/2;
       myXspeed = myYspeed = 0;
       myPointDirection = 90;
     }
     public void hyperspace(){
       myXspeed = myYspeed = 0;
-      myCenterX  =(int)(Math.random() * 500);
-      myCenterY = (int)(Math.random() * 500);
+      myCenterX  =(int)(Math.random() * 1920);
+      myCenterY = (int)(Math.random() * 1080);
       myPointDirection = (int)(Math.random() * 360);
     }
     public double getCenterX(){
@@ -77,8 +78,8 @@ class Star
 {
   private int myX, myY;
   public Star() {
-    myX = (int)(Math.random() * 500);
-    myY = (int)(Math.random() * 500);
+    myX = (int)(Math.random() * 1920);
+    myY = (int)(Math.random() * 1080);
   }
   public void show() {
     fill(255);
