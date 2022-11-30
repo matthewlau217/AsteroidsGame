@@ -16,11 +16,11 @@ public void draw()
     owo[i].show();
   }
   color(255);
-  text("Center X: " + uwu.myCenterX, 50, 30);
-  text("Center Y: " + uwu.myCenterY, 50, 45);
-  text("Speed X: " + uwu.myXspeed, 50, 60);
-  text("Speed Y: " + uwu.myYspeed, 50, 75);
-  text("Direction: " + uwu.myPointDirection, 50, 90);
+  //text("Center X: " + uwu.myCenterX, 50, 30);
+  //text("Center Y: " + uwu.myCenterY, 50, 45);
+  //text("Speed X: " + uwu.myXspeed, 50, 60);
+  //text("Speed Y: " + uwu.myYspeed, 50, 75);
+  //text("Direction: " + uwu.myPointDirection, 50, 90);
   uwu.move();
   uwu.show();
 }
