@@ -8,7 +8,7 @@ public void setup()
   for (int i = 0; i < owo.length; i++) {
     owo[i] = new Star();
   }
-  for (int i = 0; i < 10; i++) {
+  for (int i = 0; i < 100; i++) {
     B3.add(new Asteroid());
   }
 }
