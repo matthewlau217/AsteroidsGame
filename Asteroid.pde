@@ -1,6 +1,6 @@
 class Asteroid extends Floater
 {
-  public double rSpeed;
+  private double rSpeed;
   public Asteroid() {
     corners = 22;
     xCorners = new int[]{0, 1, 2, 2, 1, 1, 2, 3, 3, 2, 1, 0, -1, -2, -3, -3, -2, -1, -1, -2, -2, -1};
