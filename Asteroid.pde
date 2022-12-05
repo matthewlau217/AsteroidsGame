@@ -21,4 +21,10 @@ class Asteroid extends Floater
     turn(rSpeed);
     super.move();
   }
+  public double getCenterX(){
+   return myCenterX;
+ }
+ public double getCenterY(){
+   return myCenterY;
+ }
 }
