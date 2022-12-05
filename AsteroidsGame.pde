@@ -22,13 +22,10 @@ public void draw()
   for (int i = 0; i < B3.size(); i++){
     B3.get(i).move();
     B3.get(i).show();
+    if (dist((float)uwu.getCenterX(),(float)uwu.getCenterY(),(float)B3.get(i).getCenterX(),(float)B3.get(i).getCenterY()) < 50) {
+      B3.remove(i);
+    }
   }
-  //color(255);
-  //text("Center X: " + uwu.myCenterX, 50, 30);
-  //text("Center Y: " + uwu.myCenterY, 50, 45);
-  //text("Speed X: " + uwu.myXspeed, 50, 60);
-  //text("Speed Y: " + uwu.myYspeed, 50, 75);
-  //text("Direction: " + uwu.myPointDirection, 50, 90);
   uwu.move();
   uwu.show();
 }
