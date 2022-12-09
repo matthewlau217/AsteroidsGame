@@ -2,9 +2,9 @@ class Asteroid extends Floater
 {
   private double rSpeed;
   public Asteroid() {
-    corners = 22;
-    xCorners = new int[]{0, 1, 2, 2, 1, 1, 2, 3, 3, 2, 1, 0, -1, -2, -3, -3, -2, -1, -1, -2, -2, -1};
-    yCorners = new int[]{9, 9, 7, 6, 6, -4, -4, -5, -6, -7, -7, -6, -7, -7, -6, -5, -4, -4, 6, 6, 7, 9};
+    corners = 6;
+    xCorners = new int[]{-11, 7, 13, 6, -11, -5};
+    yCorners = new int[]{-8, -8, 0, 10, 8, 0};
     for(int i = 0; i < xCorners.length; i++){
       xCorners[i] = xCorners[i] * 5;
       yCorners[i] = yCorners[i] * 5;
