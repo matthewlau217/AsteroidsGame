@@ -25,13 +25,13 @@ public void draw()
   for (int i = 0; i < B3.size(); i++){
     B3.get(i).move();
     B3.get(i).show();
-    if (dist((float)uwu.getCenterX(),(float)uwu.getCenterY(),(float)B3.get(i).getCenterX(),(float)B3.get(i).getCenterY()) < 50) {
+    if (dist((float)uwu.getCenterX(),(float)uwu.getCenterY(),(float)B3.get(i).getCenterX(),(float)B3.get(i).getCenterY()) < 10) {
       B3.remove(i);
     }
   }
   for (int i = 0; i < XD.size(); i++) {
     for (int j = 0; j < B3.size(); j++) {
-      if (dist((float)(B3.get(j).getCenterX()),(float)(B3.get(j).getCenterY()),(float)(XD.get(i).getCenterX()),(float)(XD.get(i).getCenterY())) < 25){
+      if (dist((float)(B3.get(j).getCenterX()),(float)(B3.get(j).getCenterY()),(float)(XD.get(i).getCenterX()),(float)(XD.get(i).getCenterY())) < 10){
         XD.remove(i);
         B3.remove(j);
         B3.add(new Asteroid());
